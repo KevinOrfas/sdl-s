@@ -1,0 +1,25 @@
+body.about--active .about {
+    transform: translateY(0px);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, opacity 0s linear 0s, visibility 0s linear 0s;
+    visibility: visible;
+    z-index: 2;
+}
+
+body.regions--active .header__regions {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, opacity 0s linear 0s, visibility 0s linear 0s;
+    visibility: visible;
+    .page-title {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.is-active {
+    transform: translateY(600px);
+}
+
+.nav-active {
+    transform: translateY(350px);
+}
