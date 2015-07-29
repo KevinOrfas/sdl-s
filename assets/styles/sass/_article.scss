@@ -43,11 +43,17 @@
         position: absolute;
         right: 40px;
         top: 0;
+        &.stickit {
+            position: fixed;
+            top: 0;
+        }
      }
 }
 
+
+
 .share-widget {
-    margin-bottom: 60px;
+    margin: 60px 0;
     @include MQ(L) {
         margin-bottom: 0;
     }
@@ -71,30 +77,34 @@
     font-size: 16px;
     margin: 15px 0;
     text-align: center;
-    a {
-        border: 1px solid #bebebe;
-        border-radius: 50%;
-        color: #504e4f;
-        display: inline-block;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, margin 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, background 0.3s ease 0s, color 0.2s ease 0s, border 0.3s ease 0s;
-        width: 40px;
-        &:hover {
-            background: #474747 none repeat scroll 0 0;
-            border-color: #474747;
-            color: #fff;
-        }
-        @include MQ(M) { 
-            margin-left: 10px;
-        }
-        
-    }
     @include MQ(L) {
         font-size: 14px;
         text-align: right;
     }
+}
+
+.share-widget .social-icons a { 
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+    color: #504e4f;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, margin 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, background 0.3s ease 0s, color 0.2s ease 0s, border 0.3s ease 0s;
+    width: 40px;
+    
+    @include MQ(M) { 
+        margin-left: 10px;
+
+    }
+}
+
+.share-widget .social-icons a:hover {
+    background: #474747;
+    border-color: #474747;
+    color: #fff;
+    cursor: pointer;
 }
 
 .share-widget .social-icons i {
@@ -113,7 +123,7 @@
     }
 }
 
-.social-icons a {
+.social-icons a:hover {
     color: #1a1a1a;
     display: inline-block;
     text-decoration: none;

@@ -38,6 +38,15 @@ Modules - reusable parts of our design
 	@include clearfix;
 }
 
+
+.cd-container-full { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 90%;
+	max-width: $L; // breakpoints inside partials > _layout.scss
+	margin: 0 auto;
+	@include clearfix;
+	position: relative;
+}
+
 /* -------------------------------- 
 
 Main components 
@@ -47,6 +56,8 @@ Main components
 html, body {
 	height: 100%;
 }
+
+
 
 .cd-header {
 	position: absolute;
@@ -357,7 +368,7 @@ html, body {
 
 .cd-main-content {
 	position: relative;
-	z-index: $content-zindex;
+	// z-index: $content-zindex;
 	margin-top: 2em;
 	p {
 		line-height: 1.6;
@@ -373,4 +384,8 @@ html, body {
 			@include font-size(20px);
 		}
 	}
+}
+
+.filters {
+	margin-top: 3em;
 }

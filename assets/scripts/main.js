@@ -28,6 +28,22 @@ jQuery(document).ready(function($){
 		});
 	}
 
+	var scrollObject = {};
+	window.onscroll = getScrollPosition;
+
+	function getScrollPosition() {
+    	scrollObject = {
+       		x: window.pageXOffset,
+       		y: window.pageYOffset
+    	};
+    	// If you want to check distance
+    	if(scrollObject.y > 700) {
+        	$('.stickem').addClass('stickit');
+    	} else {
+        	$('.stickem').removeClass('stickit');
+    	}
+	}
+
 	//open/close primary navigation
 	$('.cd-primary-nav-trigger').on('click', function(){
 		$('.cd-menu-icon').toggleClass('is-clicked'); 
