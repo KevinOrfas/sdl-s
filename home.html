@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<style>
+	/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  height: 75%; /* inherit height from body */
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.grid-item--width2 { width: 210px; }
+.grid-item--height2 { height: 200px; }
+
+	</style>
+</head>
+<body>
+	<h1>Isotope - masonryHorizontal layout mode</h1>
+
+<div class="grid">
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.js"></script>
+	<script src="/bower_components/isotope-masonry-horizontal/masonry-horizontal.js"></script>
+	<script>
+	$(document).ready( function() {
+
+  // $('.grid').isotope({
+  //   layoutMode: 'masonryHorizontal',
+  //   itemSelector: '.grid-item',
+  //   masonryHorizontal: {
+  //     rowHeight: 100
+  //   }
+  // });
+
+});
+	</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -33,7 +33,7 @@ Modules - reusable parts of our design
 
 .cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: 90%;
-	max-width: $M; // breakpoints inside partials > _layout.scss
+	max-width: $L; // breakpoints inside partials > _layout.scss
 	margin: 0 auto;
 	@include clearfix;
 }
@@ -47,9 +47,9 @@ Modules - reusable parts of our design
 	position: relative;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 
@@ -64,6 +64,7 @@ html, body {
 	top: 0;
 	left: 0;
 	background: rgba($color-1, .95);
+	background: rgba(169, 163, 158, 0.96);
 	height: $header-height-S;
 	width: 100%;
 	z-index: $header-zindex;
@@ -89,6 +90,7 @@ html, body {
 			position: fixed;
 			top: -$header-height-M;
 			background-color: rgba($color-1, .96);
+			background: rgba(169, 163, 158, 0.96);
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
@@ -112,8 +114,15 @@ html, body {
 	@include center(y);
 	left: .875em;
 
-	img {
-		display: block;
+	span {
+		border-bottom: 1px solid #fff;
+		font-size: 2em;
+	}
+	// img {
+	// 	display: block;
+	// }
+	p {
+		margin-top: .4em;
 	}
 
 	@include MQ(M) {
@@ -170,12 +179,12 @@ html, body {
 		height: 2px;
 		background-color: $color-3;
 		@include transition(background-color .3s);
-		
+
 		/* these are the upper and lower lines in the menu icon */
 		&::before, &:after {
 			content: '';
 			width: 100%;
-			height: 100%; 
+			height: 100%;
 			position: absolute;
 			background-color: $color-3;
 			right: 0;
@@ -184,7 +193,7 @@ html, body {
 			-moz-transition: -moz-transform .3s, top .3s, background-color 0s;
 			transition: transform .3s, top .3s, background-color 0s;
 		}
-		
+
 		&::before {
 			top: -5px;
 		}
@@ -241,6 +250,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background: rgba($color-1, .96);
+	background: rgba(167, 119, 105, 0.96);
 	z-index: $nav-zindex;
 	text-align: center;
 	padding: $header-height-S 0;
@@ -285,7 +295,7 @@ html, body {
 	.cd-social {
 		display: inline-block;
 		margin: 0 .4em;
-		
+
 		a {
 			width: 44px;
 			height: 44px;
@@ -337,12 +347,12 @@ html, body {
 
 .cd-intro {
 	position: relative;
-	height: 100%;
+	height: 400px;
 	background: url('../images/cd-background-img.jpg') no-repeat center center;
 	background-size: cover;
 	z-index: $content-zindex;
 	@include font-smoothing;
-
+	font-size: 40px;
 	h1 {
 		position: absolute;
 		width: 90%;
@@ -362,7 +372,7 @@ html, body {
 	}
 
 	@include MQ(L) {
-		height: 700px;
+		height: 190px;
 	}
 }
 
