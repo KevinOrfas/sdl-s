@@ -22,8 +22,18 @@
 //     }
 // }
 
+h2 {
+    font-family: 'MyWebFont';
+}
+
 .grid__item img {
 	display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+img {
+    display: block;
     max-width: 100%;
     width: 100%;
 }
@@ -33,25 +43,28 @@
     opacity: 1;
     transition: opacity 0.3s ease-in 0s;
     width: 100%;
-    @include MQ(M) {
-		height: 460px;
+    max-width: 100%;
+    @include MQ(L) {
+		height: auto;
     	margin-bottom: 40px;
-    	margin-right: 40px;
-    	max-width: 320px;
+    	margin-right: 10px;
+    	max-width: 430px;
     }
 }
 
 @include MQ(M) {
 	.grid__item--featured {
-	    height: 460px;
-	    max-width: 680px;
+	    height: auto;
+	    max-width: 100%;
+        margin-right: 100px;
 	}
 }
 
 @include MQ(L) {
 	.grid__item--featured {
-	    height: 460px;
-	    max-width: 680px;
+	    height: auto;
+	    max-width: 650px;
+        margin-right: 10px;
 	}
 }
 

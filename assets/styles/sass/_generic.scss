@@ -6,6 +6,7 @@ body {
 	font: {
 		size: 100%;
 		family: $primary-font; // variables inside partials > _variables.scss
+		family: 'MyWebFont';
 	}
 	color: rgba($color-1, .7);
 	background-color: $color-3;

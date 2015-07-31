@@ -34,6 +34,7 @@ Modules - reusable parts of our design
 .cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: 90%;
 	max-width: $L; // breakpoints inside partials > _layout.scss
+	max-width: 1200px; 
 	margin: 0 auto;
 	@include clearfix;
 }
@@ -112,8 +113,10 @@ html, body {
 	display: block;
 	position: absolute;
 	@include center(y);
+	// top: 100%;
+	margin-top: 1em;
 	left: .875em;
-
+	@include font-size(30px);
 	span {
 		border-bottom: 1px solid #fff;
 		font-size: 2em;
@@ -137,9 +140,11 @@ html, body {
 	/* hidden on small devices */
 	display: none;
 
+
 	li {
 		display: inline-block;
 		margin-left: 2.2em;
+		// font-size: 3em;
 	}
 
 	a {
@@ -266,7 +271,7 @@ html, body {
 	@include transition-duration(.4s);
 
 	li {
-		@include font-size(22px);
+		@include font-size(70px);
 		font-weight: 300;
 		@include font-smoothing;
 		margin: .2em 0;
@@ -372,7 +377,7 @@ html, body {
 	}
 
 	@include MQ(L) {
-		height: 190px;
+		height: 400px;
 	}
 }
 
