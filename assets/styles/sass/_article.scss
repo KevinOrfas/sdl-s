@@ -79,7 +79,7 @@
     text-align: center;
     @include MQ(L) {
         font-size: 14px;
-        text-align: right;
+        // text-align: right;
     }
 }
 
@@ -141,7 +141,7 @@
 .article .top-widget {
     display: none !important;
     margin-top: 180px;
-    text-align: right;
+    // text-align: right;
 }
 .article .top-widget a {
     background: #fff none repeat scroll 0 0;
@@ -151,6 +151,6 @@
     font-size: 30px;
     height: 100px;
     line-height: 100px;
-    text-align: center;
+    // text-align: center;
     width: 100px;
 }

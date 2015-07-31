@@ -497,8 +497,7 @@ html, body {
   text-align: center; }
   @media only screen and (min-width: 1170px) {
     .share-widget .social-icons {
-      font-size: 14px;
-      text-align: right; } }
+      font-size: 14px; } }
 
 .share-widget .social-icons a {
   border: 1px solid #bebebe;
@@ -552,8 +551,7 @@ html, body {
 
 .article .top-widget {
   display: none !important;
-  margin-top: 180px;
-  text-align: right; }
+  margin-top: 180px; }
 
 .article .top-widget a {
   background: #fff none repeat scroll 0 0;
@@ -563,7 +561,6 @@ html, body {
   font-size: 30px;
   height: 100px;
   line-height: 100px;
-  text-align: center;
   width: 100px; }
 
 .cbp-l-filters-alignCenter {
