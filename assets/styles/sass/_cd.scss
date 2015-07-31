@@ -394,7 +394,7 @@ html, body {
 		margin: 1em 0;
 	}
 
-	@include MQ(L) {
+	@include MQ(S) {
 		p {
 			@include font-size(20px);
 		}
