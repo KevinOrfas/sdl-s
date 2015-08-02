@@ -161,9 +161,10 @@ html, body {
   font-size: 1.875rem; }
   .cd-logo span {
     border-bottom: 1px solid #fff;
-    font-size: 2em; }
+    font-size: 1em; }
   .cd-logo p {
-    margin-top: .4em; }
+    margin-top: .4em;
+    font-size: 0.48em; }
   @media only screen and (min-width: 768px) {
     .cd-logo {
       left: 2.6em; } }
@@ -457,6 +458,15 @@ img {
   color: #808080;
   font-size: 14px;
   margin: 0 !important; }
+
+.cd-logo {
+  margin-top: 0; }
+
+span {
+  font-size: 1em; }
+
+p {
+  font-size: 0.5em; }
 
 .article__content-wrapper {
   position: relative; }
