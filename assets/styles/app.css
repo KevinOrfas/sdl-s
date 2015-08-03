@@ -305,11 +305,12 @@ html, body {
   .cd-primary-nav a {
     display: inline-block;
     padding: .4em 1em;
-    border-radius: 0.25em;
+    /*border-radius: 0.25em;*/
+    font-size: 0.4em;
     -webkit-transition: background .2s;
     transition: background .2s; }
     .no-touch .cd-primary-nav a:hover {
-      background-color: #e36767; }
+      background-color: #AAAFAE; }
   .cd-primary-nav .cd-label {
     color: #06446e;
     text-transform: uppercase;
@@ -351,12 +352,17 @@ html, body {
       font-size: 1.875rem; }
     .cd-primary-nav .cd-label {
       font-size: 16px;
-      font-size: 1rem; } }
+      font-size: 1rem; } 
+    .cd-primary-nav a {
+      font-size: 1em;
+      } }
+
 
 .cd-intro {
   position: relative;
   height: 400px;
-  background: url('../images/cd-background-img.jpg') no-repeat center center;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.9) 70%, #ffffff 80%), url('../images/cd-background-img.jpg') no-repeat center center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.9) 70%, #ffffff 80%), url('../images/cd-background-img.jpg') no-repeat center center;
   background-size: cover;
   z-index: 1;
   -webkit-font-smoothing: antialiased;
