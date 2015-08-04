@@ -69,18 +69,23 @@ html, body {
 	height: $header-height-S;
 	width: 100%;
 	z-index: $header-zindex;
-	box-shadow: 0 1px 2px rgba(#000, .3);
+	// box-shadow: 0 1px 2px rgba(#000, .3);
 	@include font-smoothing;
+	padding-bottom: 2em;
 
-	@include MQ(M) {
-		height: $header-height-M;
-		background: transparent;
-		box-shadow: none;
-	}
+	// @include MQ(M) {
+	// 	height: $header-height-M;
+	// 	background: transparent;
+	// 	box-shadow: none;
+	// 	padding-bottom: 2em;
+	// }
 
 	@include MQ(L) {
 		@include transition(background-color .3s);
-
+		height: $header-height-M;
+		background: transparent;
+		box-shadow: none;
+		padding-bottom: 2em;
 		/* Force Hardware Acceleration in WebKit */
 		@include transform(translate3d(0,0,0));
 		-webkit-backface-visibility: hidden;
@@ -90,8 +95,7 @@ html, body {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
 			top: -$header-height-M;
-			background-color: rgba($color-1, .96);
-			background: rgba(169, 163, 158, 0.96);
+			
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
@@ -107,6 +111,7 @@ html, body {
 			background-color: rgba($color-1, .96);
 		}
 	}
+ 
 }
 
 .cd-logo {
@@ -139,8 +144,8 @@ html, body {
 	@include center(y);
 	right: 10em;
 	/* hidden on small devices */
-	display: none;
-
+	// display: none;
+	// background: red;
 
 	li {
 		display: inline-block;
@@ -155,7 +160,7 @@ html, body {
 		font-weight: 700;
 	}
 
-	@include MQ(M) {
+	@include MQ(S) {
 		display: block;
 	}
 }
