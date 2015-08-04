@@ -38,9 +38,9 @@ jQuery(document).ready(function($){
     	};
     	// If you want to check distance
     	if(scrollObject.y > 700) {
-        	$('.stickem').addClass('stickit');
+        	$('.header').addClass('is-sticky');
     	} else {
-        	$('.stickem').removeClass('stickit');
+        	$('.header').removeClass('is-sticky');
     	}
 	}
 
@@ -60,4 +60,6 @@ jQuery(document).ready(function($){
 			});
 		}
 	});
+
+	
 });

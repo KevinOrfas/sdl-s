@@ -1,25 +1,27 @@
-// @import 'bootstrap';
+@import 'bootstrap';
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 
 @import 'variables';
 @import 'mixins';
 @import 'reset';
 @import 'layout';
-@import 'cd';
+// @import 'cd';
 // @import 'generic';
 
 // @import 'links';
-@import 'header';
+// @import 'header';
 // @import 'search';
 // @import 'about';
 // @import 'transforms';
-@import 'content';
-@import 'article';
+// @import 'content';
+// @import 'article';
 @import 'cube-portfolio';
 @import 'cubeportfolio';
 @import 'footer';
+@import 'boot';
 // @import 'slick-theme.scss';
 
-
-
-
+img {
+	max-width: 100%;
+	width: 100%;
+}
