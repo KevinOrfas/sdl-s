@@ -305,9 +305,9 @@ html, body {
   .cd-primary-nav a {
     display: inline-block;
     padding: .4em 1em;
-    border-radius: 0.25em;
     -webkit-transition: background .2s;
-    transition: background .2s; }
+    transition: background .2s;
+    font-size: 0.4em; }
     .no-touch .cd-primary-nav a:hover {
       background-color: #e36767; }
   .cd-primary-nav .cd-label {
@@ -388,8 +388,7 @@ html, body {
       height: 400px; } }
 
 .cd-main-content {
-  position: relative;
-  margin-top: 2em; }
+  position: relative; }
   .cd-main-content p {
     line-height: 1.6;
     margin: 2em 0; }
