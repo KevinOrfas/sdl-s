@@ -25,15 +25,15 @@ h2 {
 }
 
 @include MQ(M) {
-	.grid__item--featured {
+    .grid__item--featured {
 	    height: auto;
 	    max-width: 100%;
         margin-right: 100px;
 	}
 }
 
-@include MQ(L) {
-	.grid__item--featured {
+.grid__item--featured {
+    @include MQ(L) {
 	    height: auto;
 	    max-width: 650px;
         margin-right: 10px;
@@ -65,11 +65,15 @@ h2 {
 
 span {
     font-size: 1em;
+<<<<<<< HEAD
 }  
 // p  {
 //         font-size: 0.5em;
 // }
 
+=======
+} 
+>>>>>>> homepage
 
 
 

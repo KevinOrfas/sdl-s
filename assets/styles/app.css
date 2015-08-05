@@ -5088,18 +5088,17 @@ html, body {
   height: 50px;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  @media only screen and (min-width: 768px) {
-    .cd-header {
-      height: 80px;
-      background: transparent;
-      box-shadow: none; } }
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 2em; }
   @media only screen and (min-width: 1170px) {
     .cd-header {
       -webkit-transition: background-color .3s;
       transition: background-color .3s;
+      height: 80px;
+      background: transparent;
+      box-shadow: none;
+      padding-bottom: 2em;
       /* Force Hardware Acceleration in WebKit */
       -webkit-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
@@ -5110,8 +5109,6 @@ html, body {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
         top: -80px;
-        background-color: rgba(2, 23, 37, 0.96);
-        background: rgba(169, 163, 158, 0.96);
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s; }
       .cd-header.is-visible {
@@ -5153,8 +5150,7 @@ html, body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 10em;
-  /* hidden on small devices */
-  display: none; }
+  /* hidden on small devices */ }
   .cd-secondary-nav li {
     display: inline-block;
     margin-left: 2.2em; }
@@ -5163,7 +5159,7 @@ html, body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 320px) {
     .cd-secondary-nav {
       display: block; } }
 
