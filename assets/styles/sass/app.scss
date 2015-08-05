@@ -27,3 +27,98 @@ img {
     max-width: 100%;
     width: 100%;
 }
+
+.cf {
+    *zoom: 1;
+    &:after, 
+    &:before {
+        content: ""; 
+        display: table; 
+    }
+    &:after {
+        clear: both;
+    }    
+}
+
+
+.main {
+    @extend .cf;
+    margin: 1.250em;
+}
+
+/*** Mansonry ***/
+.container.masonry {
+    @extend .cf;
+    // float: left;
+    margin: 0 auto 2.5em;
+    padding: 0;
+    position: relative;
+    width: 77%;
+    &.gallery{
+        width: 100%;
+    }
+}    
+
+.item {
+	 float: left;
+     width: 14.625em;
+     &.w2 {
+         width: 29.688em;  
+     }
+    .bottom {
+       width: inherit;
+       margin: 0 0 .5em 0; 
+     }            
+     .date, 
+     .share {
+          color: #000;
+          display: inline-block;
+          font-size: .750em;
+      }    
+}
+
+/* Transitions */
+
+.masonry,
+.masonry .masonry-item {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.masonry .masonry-item {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
+.image_holder {
+    height: auto;
+    overflow: hidden;
+    width: 14.625em; 
+     img {
+        height: 199px;
+        width: auto;
+    }
+    &.large {
+        height: auto;
+        width: 29.688em;
+      img {
+        height: 465px;
+        width: auto;
+      }
+    }
+}

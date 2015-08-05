@@ -61,5 +61,59 @@ jQuery(document).ready(function($){
 		}
 	});
 
+	/*  
+	----------------------
+		Masonry Scripts
+	----------------------
+	*/
+
+	var $wall = $('.container');
+	    $wall.masonry({
+	    	isInitLayout: false
+	    });
+	    $wall.imagesLoaded( function(){
+		  $wall.masonry({
+			columnWidth: 15,
+			itemSelector: '.item',
+			gutter: 5,
+			transitionDuration: 0,
+	        animationOptions: {
+	          duration: 7000,
+	          easing: 'linear',
+	          queue: false
+	        }
+		});
+
+		// infinitescroll() is called on the element that surrounds
+		// the items you will be loading more of 
+		$wall.infinitescroll({ 
+			navSelector : '.page_nav',
+			// selector for the paged navigation 
+			nextSelector : '.page_nav a',
+			// selector for the NEXT link (to page 2)
+			itemSelector : '.item',
+			// selector for all items you'll retrieve 
+			loading: {
+				finishedMsg: 'No more stories',
+				msgText: "Loading stories...",
+				speed: 'slow'
+			    },
+		},
+
+		// trigger Masonry as a callback 
+		function(newElements) {
+		// hide new items while they are loading 
+		var $newElems = $( newElements ).css({ opacity: 0 }); 
+		// ensure that images load before adding to Masonry layout 
+		$newElems.imagesLoaded(function() { 
+		// show elems now they're ready
+			$newElems.animate({ opacity: 1 }, 500);
+			$wall.masonry( 'appended', $newElems ); 
+		    }); 
+		  } 
+		);  
+     });
+
+
 	
 });
