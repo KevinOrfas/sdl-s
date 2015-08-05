@@ -1,27 +1,3 @@
-// #content {
-//     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, opacity 0.5s ease 0s;
-// }
-// .site-content {
-//     padding: 0;
-//     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-// }
-
-// .container,
-// .grid {
-//     margin: 0 auto;
-//     max-width: 460px;
-//     width: 100%;
-//     @media only screen and (min-width: 768px) { 
-// 		max-width: 680px;
-//     }
-//     @media only screen and (min-width: 1200px) { 
-// 		max-width: 1040px;
-//     }
-//     @media only screen and (min-width: 1600px) { 
-// 		max-width: 1400px;
-//     }
-// }
-
 h2 {
     font-family: 'MyWebFont';
 }
@@ -32,11 +8,7 @@ h2 {
     width: 100%;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-}
+
 
 .grid__item {
     float: left;

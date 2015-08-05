@@ -5017,6 +5017,11 @@ table {
   font-family: 'Glamor';
   font-size: 4em !important; }
 
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%; }
+
 .cbp-l-filters-alignCenter {
   margin-top: 3em; }
   .cbp-l-filters-alignCenter .cbp-filter-item {
@@ -8890,9 +8895,9 @@ blockquote {
   .one h2 {
     color: #fff;
     color: #8f8f8f;
+    background-color: rgba(143, 143, 143, 0.1);
     font-size: 3em;
-    padding: .5em .1em;
-    background-color: #e6e6e6; }
+    padding: .5em .1em; }
 
 .social-icons {
   list-style: outside none none;
@@ -8970,5 +8975,6 @@ blockquote {
       margin-bottom: 0; } }
 
 img {
+  display: block;
   max-width: 100%;
   width: 100%; }
