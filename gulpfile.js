@@ -8,7 +8,7 @@ var browserSync = require('browser-sync'),
 
 var input = {
     'sass': 'assets/styles/sass/**/*.scss',
-    'scripts': 'assets/scripts/*.js',
+    'scripts': 'assets/scripts/**/*.js',
     'vendor': 'assets/scripts/vendor/**/*.js',
     'images' : 'assets/images/**/*',
     'graphics' : 'assets/graphics/**/*',
@@ -18,6 +18,7 @@ var input = {
     'css' : 'assets/styles',
     'styles': 'dist/assets/styles',
     'scripts': 'dist/assets/scripts',
+    'vendor': 'dist/assets/scripts/vendor',
     'images' : 'dist/assets/images',
     'graphics' : 'dist/assets/graphics',
     'fonts' : 'dist/assets/fonts'
@@ -79,7 +80,7 @@ gulp.task('build-css', function() {
 
 
 gulp.task('build-js', function() {
-  return gulp.src([input.scripts, input.vendor])
+  return gulp.src(input.scripts)
     .pipe($.sourcemaps.init())
       //only uglify if gulp is ran with '--type production'
       .pipe($.util.env.type === 'production' ? $.concat('bundle.js') : $.util.noop())
@@ -123,7 +124,7 @@ gulp.task('clean', function(cb) {
     del('dist', cb)
 });
 
-gulp.task('build', ['build-css', 'build-js', 'html', 'images', 'graphics', 'fonts'], function () {
+gulp.task('build', ['clean', 'build-css', 'build-js', 'html', 'images', 'fonts'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

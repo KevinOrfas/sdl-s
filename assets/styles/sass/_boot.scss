@@ -3,9 +3,12 @@ html {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 2em;
 	margin: 1em;
-
+	word-wrap: break-word;
+	@include MQ(M) {
+		font-size: 4em;
+	}
 	span {
 		border-bottom: 1px solid rgba(143,143,143,1);
 	}
@@ -13,6 +16,10 @@ h1 {
 		padding-top: .5em;
 		font-size: .5em;
 	}
+}
+
+h2 {
+	margin: .5em 0;
 }
 
 .jumbotron {
