@@ -9248,15 +9248,6 @@ blockquote {
   background-color: #f8f8f8;
   border-color: #e7e7e7; }
 
-.one {
-  position: relative; }
-  .one h2 {
-    color: #fff;
-    color: #8f8f8f;
-    background-color: rgba(143, 143, 143, 0.1);
-    font-size: 3em;
-    padding: .5em .1em; }
-
 .social-icons {
   list-style: outside none none;
   padding: 0; }
