@@ -29,3 +29,24 @@
 @import 'boot';
 
 
+#seven .jumbotron {
+	padding-top: 30px;
+	position: relative;
+}
+
+#seven .navbar-default {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	box-shadow: 1px 1px 1px grey;
+}
+
+#seven .affix {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px
+}
