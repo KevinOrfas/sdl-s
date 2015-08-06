@@ -8,7 +8,7 @@ var browserSync = require('browser-sync'),
 
 var input = {
     'sass': 'assets/styles/sass/**/*.scss',
-    'scripts': 'assets/scripts/**/*.js',
+    'scripts': 'assets/scripts/*.js',
     'vendor': 'assets/scripts/vendor/**/*.js',
     'images' : 'assets/images/**/*',
     'graphics' : 'assets/graphics/**/*',
