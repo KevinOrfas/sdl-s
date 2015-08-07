@@ -55,23 +55,23 @@
 
 
 @media screen and (min-width: 1000px) {
-  .image_holder {
-    height: auto;
-    overflow: hidden;
-    width: 14.625em; 
-    img {
-        height: 199px;
-        width: auto;
-    }
-    &.large {
-        height: auto;
-        width: 29.688em;
-      img {
-        height: 465px;
-        width: auto;
-      }
-    }
-  }
+  // .image_holder {
+  //   height: auto;
+  //   overflow: hidden;
+    // width: 14.625em; 
+  //   img {
+  //       height: 199px;
+  //       width: auto;
+  //   }
+  //   &.large {
+  //       height: auto;
+  //       width: 29.688em;
+  //     img {
+  //       height: 465px;
+  //       width: auto;
+  //     }
+  //   }
+  // }
 }
 
 
