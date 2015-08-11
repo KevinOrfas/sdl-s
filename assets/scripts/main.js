@@ -73,9 +73,11 @@ jQuery(document).ready(function($){
 	    });
 	    $wall.imagesLoaded( function(){
 		  $wall.masonry({
-			columnWidth: 15,
+			columnWidth: 150,
 			itemSelector: '.item',
 			gutter: 5,
+			gutterWidth: 150,
+			isFitWidth: true,
 			transitionDuration: 0,
 	        animationOptions: {
 	          duration: 7000,

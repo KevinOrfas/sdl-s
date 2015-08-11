@@ -12,62 +12,37 @@
 @import 'tools.mixins';
 
 // Generic
-// @import 'generic.normalize';
-@import 'generic.reset';
+
 
 // Base
 @import 'base.images';
+@import 'base.page';
 
 // Components
 @import 'components.masonry';
 @import 'components.footer';
 @import 'components.share';
-@import 'components.cd';
+// @import 'components.cd';
 
 // Trumps
 @import 'trumps.position';
 
 @import 'boot';
 
-
-#seven .jumbotron {
-	padding-top: 30px;
-	position: relative;
+#fabric {
+	background: #dfdfdf;
+	padding: 2em;
 }
 
-#seven .navbar-default {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	margin-bottom: 0;
-	box-shadow: 1px 1px 1px grey;
+#about {
+	background: #eeeeee;
+	padding: 2em;
 }
 
-#seven .affix {
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    height: 50px
-}
-
-#eight .jumbotron {
-	background: url('../images/IMG_1467-2.jpg') no-repeat;
-	background-size: cover;
-	height: 30em;
-	h1 {
-		color: #fff;
-	}
-}
-
-#eight h2 {
-	font-size: 3em;
-}
-
-#eight h4 {
-	font-size: 2em;
-	color: lightslategrey;
-	margin: 2em 0;
+.lexicon-heading {
+	margin: 0 auto 1em auto;
+	border-bottom: 1px solid orange;
+	width: 50%;
+	padding: 1em 0;
 }
 
