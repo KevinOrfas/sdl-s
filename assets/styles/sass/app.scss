@@ -34,15 +34,80 @@
 	padding: 2em;
 }
 
-#about {
-	background: #eeeeee;
+#lexicon {
+	padding-bottom: 2em;
+}
+
+#where {
+	background: #D5C5B6;
 	padding: 2em;
 }
+
+.section-heading {
+	font-family: 'Libre Baskerville', serif;
+}
+
 
 .lexicon-heading {
 	margin: 0 auto 1em auto;
 	border-bottom: 1px solid orange;
 	width: 50%;
 	padding: 1em 0;
+}
+
+#accordion section, #accordion .pointer, #accordion h1, #accordion p {
+  -webkit-transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -moz-transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -ms-transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+#accordion {
+  margin-bottom:30px;
+}
+#accordion h1 {
+  line-height:1.2;
+  font-size: 30px;
+  // background-color:rgba(255,0,0,0.3);
+  margin:0;
+  padding: 10px 10px 10px 30px;
+}
+
+#accordion h1 a {
+  color:black;
+}
+#accordion section {
+  overflow:hidden;
+  height:220px;
+  // border:1px #333 solid;
+}
+#accordion p {
+  padding:0 10px;
+  color:black;
+}
+#accordion section.ac_hidden p:not(.pointer) {
+  color:#fff;
+}
+
+#accordion section.ac_hidden {
+  height:44px;
+}
+#accordion .pointer {
+  padding:0;
+  margin:10px 0 0 6px;
+  line-height:20px;
+  width:13px;
+  position:absolute;
+}
+#accordion section:not(.ac_hidden) h1 {
+  // background-color:rgba(255,0,0,0.7);
+}
+
+#accordion section:not(.ac_hidden) .pointer {
+  display:block;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+  padding:0;
 }
 

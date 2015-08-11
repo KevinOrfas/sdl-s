@@ -3,10 +3,6 @@ html, body {
 	font-family: 'Lato', sans-serif;
 }
 
-body {
-    // padding-top: 60px; /* set this equal to navbar's height */
-}
-
 .jumbotron {
 	height: 100%;
 	background: url('../images/IMG_1480.jpg') no-repeat;
@@ -14,14 +10,22 @@ body {
 	background-position: center center;
 	position: relative;
 	margin: 0;
-	h1 {
+	.lead {
 		position: absolute;
 		bottom: 10%;
-		padding: 1em;
+		left: 3em;
 		color: #fff;
-
+		font-family: 'Libre Baskerville', serif;
 	}
+	h2 {
+		border-bottom: 1px solid orange;
+		margin: 0;
+		font-size: 2.4em;
+	}
+}
 
+.navbar-header h4 {
+	margin: 0;
 }
 
 .heading {
@@ -29,7 +33,9 @@ body {
     color: rgb(64, 64, 64);
     line-height: 1.5;
     font-weight: 300;
-    padding-left: 10%;
-    padding-right: 10%;
     margin-bottom: 2em;
+    @include MQ(M) {
+    	 padding-left: 10%;
+    	padding-right: 10%;
+    }
 }

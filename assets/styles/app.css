@@ -6928,20 +6928,30 @@ html, body {
   background-position: center center;
   position: relative;
   margin: 0; }
-  .jumbotron h1 {
+  .jumbotron .lead {
     position: absolute;
     bottom: 10%;
-    padding: 1em;
-    color: #fff; }
+    left: 3em;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif; }
+  .jumbotron h2 {
+    border-bottom: 1px solid orange;
+    margin: 0;
+    font-size: 2.4em; }
+
+.navbar-header h4 {
+  margin: 0; }
 
 .heading {
   font-size: 1.4em;
   color: #404040;
   line-height: 1.5;
   font-weight: 300;
-  padding-left: 10%;
-  padding-right: 10%;
   margin-bottom: 2em; }
+  @media only screen and (min-width: 768px) {
+    .heading {
+      padding-left: 10%;
+      padding-right: 10%; } }
 
 /*** Mansonry ***/
 .container.masonry {
@@ -7001,11 +7011,10 @@ html, body {
   transition-property: left, right, top; }
 
 footer {
-  background: #f8f8f8 none repeat scroll 0 0;
+  background: #f8f8f8;
   font-size: 1rem;
   position: relative;
   z-index: 3;
-  margin-top: 2em;
   padding: 2em; }
 
 .share-widget {
@@ -7109,12 +7118,62 @@ blockquote {
   background: #dfdfdf;
   padding: 2em; }
 
-#about {
-  background: #eeeeee;
+#lexicon {
+  padding-bottom: 2em; }
+
+#where {
+  background: #D5C5B6;
   padding: 2em; }
+
+.section-heading {
+  font-family: 'Libre Baskerville', serif; }
 
 .lexicon-heading {
   margin: 0 auto 1em auto;
   border-bottom: 1px solid orange;
   width: 50%;
   padding: 1em 0; }
+
+#accordion section, #accordion .pointer, #accordion h1, #accordion p {
+  -webkit-transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+#accordion {
+  margin-bottom: 30px; }
+
+#accordion h1 {
+  line-height: 1.2;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 10px 10px 30px; }
+
+#accordion h1 a {
+  color: black; }
+
+#accordion section {
+  overflow: hidden;
+  height: 220px; }
+
+#accordion p {
+  padding: 0 10px;
+  color: black; }
+
+#accordion section.ac_hidden p:not(.pointer) {
+  color: #fff; }
+
+#accordion section.ac_hidden {
+  height: 44px; }
+
+#accordion .pointer {
+  padding: 0;
+  margin: 10px 0 0 6px;
+  line-height: 20px;
+  width: 13px;
+  position: absolute; }
+
+#accordion section:not(.ac_hidden) .pointer {
+  display: block;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  padding: 0; }
