@@ -97,12 +97,28 @@ html, body {
 }
 
 #fabric {
-	background: #dfdfdf;
+	background: #CECFB0;
 	padding: 2em;
 }
 
 #lexicon {
 	padding-bottom: 2em;
+}
+
+.cont-img {
+	overflow: hidden;
+	position: relative;
+}
+
+.cont-img img {
+	opacity: 1;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.cont-img img:hover {
+	transform: scale(1.1) rotate(1deg);
+	z-index: 9999;
+
 }
 
 #where {
@@ -121,13 +137,33 @@ html, body {
 
 .section-heading {
 	font-family: 'Libre Baskerville', serif;
+	text-align: center;
 }
 
 
 .lexicon-heading {
-	margin: 0 auto 1em auto;
+	// margin: 0 0 .5em auto;
 	border-bottom: 1px solid orange;
-	width: 50%;
-	padding: 1em 0;
+	// width: 50%;
+	// padding: 0 0 .1em 0;
+	transform: rotate(-90deg) translate(-35%, 70px);
+	
+	float: left;
+	z-index: 99999;
+	// background-color: rgba(190,190,190,.4);
+	
+}
+
+.lexicon-heading-2 {
+	// margin: 0 0 .5em auto;
+	border-bottom: 1px solid orange;
+	// width: 50%;
+	// padding: 0 0 .1em 0;
+	transform: rotate(-90deg) translate(-50%, -30px);
+	
+	float: left;
+	z-index: 99999;
+	// background-color: rgba(190,190,190,.4);
+	
 }
 

@@ -7002,11 +7002,26 @@ html, body {
   background: rgba(255, 255, 255, 0.7) !important; }
 
 #fabric {
-  background: #dfdfdf;
+  background: #CECFB0;
   padding: 2em; }
 
 #lexicon {
   padding-bottom: 2em; }
+
+.cont-img {
+  overflow: hidden;
+  position: relative; }
+
+.cont-img img {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s; }
+
+.cont-img img:hover {
+  -webkit-transform: scale(1.1) rotate(1deg);
+      -ms-transform: scale(1.1) rotate(1deg);
+          transform: scale(1.1) rotate(1deg);
+  z-index: 9999; }
 
 #where {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_1488.jpg') no-repeat;
@@ -7016,13 +7031,24 @@ html, body {
   color: #fff; }
 
 .section-heading {
-  font-family: 'Libre Baskerville', serif; }
+  font-family: 'Libre Baskerville', serif;
+  text-align: center; }
 
 .lexicon-heading {
-  margin: 0 auto 1em auto;
   border-bottom: 1px solid orange;
-  width: 50%;
-  padding: 1em 0; }
+  -webkit-transform: rotate(-90deg) translate(-35%, 70px);
+      -ms-transform: rotate(-90deg) translate(-35%, 70px);
+          transform: rotate(-90deg) translate(-35%, 70px);
+  float: left;
+  z-index: 99999; }
+
+.lexicon-heading-2 {
+  border-bottom: 1px solid orange;
+  -webkit-transform: rotate(-90deg) translate(-50%, -30px);
+      -ms-transform: rotate(-90deg) translate(-50%, -30px);
+          transform: rotate(-90deg) translate(-50%, -30px);
+  float: left;
+  z-index: 99999; }
 
 /*** Mansonry ***/
 .container.masonry {
