@@ -6933,13 +6933,14 @@ html, body {
     margin: 200px auto auto auto;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
-    text-shadow: 0px 6px 8px #969696; }
+    text-shadow: 0px 6px 8px rgba(150, 150, 150, 0.5); }
   .jumbotron .slogan {
     position: relative;
     margin: auto;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
-    text-shadow: 0px 6px 8px #969696; }
+    font-style: italic;
+    text-shadow: 0px 6px 8px rgba(150, 150, 150, 0.5); }
   .jumbotron h2 {
     border-bottom: 2px solid white;
     margin: 0;
@@ -6977,6 +6978,11 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.social {
+  display: inline-block; }
+  .social li {
+    display: inline-block; }
 
 /*** Mansonry ***/
 .container.masonry {
