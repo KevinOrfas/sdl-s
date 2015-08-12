@@ -5,7 +5,7 @@ html, body {
 
 .jumbotron {
 	height: 100%;
-	background: url('../images/IMG_1157.jpg') no-repeat;
+	background: url('../images/IMG_1271.jpg') no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -18,6 +18,11 @@ html, body {
 		color: #fff;
 		font-family: 'Libre Baskerville', serif;
 		text-shadow: 0px 6px 8px rgba(150, 150, 150, .5);
+		h2 {
+			border-bottom: 2px solid white;
+			margin: 0;
+			font-size: 2.4em;
+		}
 	}
 	.slogan {
 		position: relative;
@@ -25,13 +30,12 @@ html, body {
 		color: #fff;
 		font-family: 'Libre Baskerville', serif;
 		font-style: italic;
-		text-shadow: 0px 6px 8px rgba(150, 150, 150, .5);
+		
+		h2 {
+			text-shadow: 20px 6px 8px rgba(150, 150, 150, .5);
+		}
 	}
-	h2 {
-		border-bottom: 2px solid white;
-		margin: 0;
-		font-size: 2.4em;
-	}
+	
 }
 
 .navbar-header h4 {
@@ -59,11 +63,71 @@ html, body {
   align-items: center;
 }
 
-.social {
-	display: inline-block;
-	li{
-		display: inline-block
+#tradition {
+	.vertical-center { 
+		min-height: 40vh;
+	}
+	.jumbotron {
+		height: 40%;
+		.lead {
+			margin: 130px;
+		} 
 	}
 }
 
+.social {
+	display: inline-block;
+	position: relative;
+	li{
+		display: inline-block;
+		left: 0;
+    	margin: 0;
+    	// padding: 1em 0 0;
+    	
+		a {
+			color: #777;
+		}
+		
+	}
+}
+
+.navbar-fixed-top {
+	padding: 2em;
+	background: rgba(255,255,255,.7) !important;
+}
+
+#fabric {
+	background: #dfdfdf;
+	padding: 2em;
+}
+
+#lexicon {
+	padding-bottom: 2em;
+}
+
+#where {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/IMG_1488.jpg') no-repeat;
+	background-size: cover;
+	// background-position: center center;
+	padding: 2em;
+	color: #fff;
+	// background-color: ;
+
+}
+
+.section-heading {
+	font-family: 'Libre Baskerville', serif;
+}
+
+
+.lexicon-heading {
+	margin: 0 auto 1em auto;
+	border-bottom: 1px solid orange;
+	width: 50%;
+	padding: 1em 0;
+}
 
