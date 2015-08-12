@@ -140,8 +140,21 @@ html, body {
 	text-align: center;
 }
 
+.section-heading {
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+}
+
 
 .lexicon-heading {
+	margin: 0 0 .5em auto;
+	border-bottom: 1px solid orange;
+	width: 50%;
+	padding: 0 0 .1em 0;
+	background-color: rgba(190,190,190,.4);
+}
+
+.lex {
 	// margin: 0 0 .5em auto;
 	border-bottom: 1px solid orange;
 	// width: 50%;
@@ -151,10 +164,9 @@ html, body {
 	float: left;
 	z-index: 99999;
 	// background-color: rgba(190,190,190,.4);
-	
 }
 
-.lexicon-heading-2 {
+.lex-2 {
 	// margin: 0 0 .5em auto;
 	border-bottom: 1px solid orange;
 	// width: 50%;
@@ -166,4 +178,6 @@ html, body {
 	// background-color: rgba(190,190,190,.4);
 	
 }
+
+
 

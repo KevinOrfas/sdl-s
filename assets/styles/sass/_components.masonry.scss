@@ -1,39 +1,22 @@
 /*** Mansonry ***/
 .container.masonry {
     @include clearfix;
-    // max-width: 1400px !important;
-    // margin-right: 0;
-    // margin-left: 0;
-    // width: 100%;
     margin: 0 auto;
-    @include MQ(S) {
-       // width: 85%;
-    }
-    
-
-
 }
 
 .item {
-    // margin: 0 0 1em 0;
   	width: 100%;
     float: left;
-    // position: relative;
-    // h4 {
-    //   position: absolute;
-    //   top: 0;
-    //   color: tint(orange, 50%);
-    //   font-size: 3em;
-    //   background: rgba(0,0,0,.6);
-    //   width: 100%;
-    // }
 }
 
 .img-fabric:after, 
 .img-fabric:before {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s;
+    @include MQ(L) {
+      opacity: 0;
+    }
 }
 .img-fabric:after {
     content: '\A';
@@ -41,7 +24,12 @@
     height: 100%;
     top: 0; 
     left: 0;
-    background: rgba(0,0,0,0.6);
+    background: none;
+    @include MQ(L) {
+      opacity: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    
 }
 .img-fabric:before {
     content: attr(data-content);
