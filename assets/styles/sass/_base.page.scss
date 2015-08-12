@@ -5,20 +5,21 @@ html, body {
 
 .jumbotron {
 	height: 100%;
-	background: url('../images/IMG_1480.jpg') no-repeat;
+	background: url('../images/IMG_1157.jpg') no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	margin: 0;
 	.lead {
-		position: absolute;
-		bottom: 10%;
-		left: 3em;
+		position: relative;
+		// bottom: 10%;
+		// left: 3em;
+		margin: 200px auto auto auto;
 		color: #fff;
 		font-family: 'Libre Baskerville', serif;
 	}
 	h2 {
-		border-bottom: 1px solid orange;
+		border-bottom: 2px solid white;
 		margin: 0;
 		font-size: 2.4em;
 	}
@@ -38,4 +39,12 @@ html, body {
     	 padding-left: 10%;
     	padding-right: 10%;
     }
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
