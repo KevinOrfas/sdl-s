@@ -7154,7 +7154,10 @@ blockquote {
 
 #where {
   background: #D5C5B6;
-  padding: 2em; }
+  padding: 2em;
+  height: 115vh; }
+  #where .container-boot {
+    margin-top: 175px; }
 
 .section-heading {
   font-family: 'Libre Baskerville', serif; }
