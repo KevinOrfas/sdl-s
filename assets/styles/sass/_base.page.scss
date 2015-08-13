@@ -8,68 +8,73 @@ body {
 		/* when primary navigation is visible, the content in the background won't scroll */
 		overflow: hidden;
 	}
+	&.modal-open {
+	    overflow: visible;
+	}
 }
-	
 
 .jumbotron {
 	height: 100%;
 	background: url('../images/IMG_1271.jpg') no-repeat;
+	background: url('../images/IMG_1476.jpg') no-repeat;
+	
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	margin: 0;
-	.lead {
-		position: relative;
-		// bottom: 10%;
-		// left: 3em;
-		margin: 200px auto auto auto;
-		color: #fff;
-		font-family: 'Libre Baskerville', serif;
-		text-shadow: 0px 6px 8px rgba(150, 150, 150, .5);
-		h2 {
-			border-bottom: 2px solid white;
-			margin: 0;
-			font-size: 2.4em;
-		}
-	}
-	.slogan {
-		position: relative;
-		margin: auto;
-		color: #fff;
-		font-family: 'Libre Baskerville', serif;
-		font-style: italic;
-		
-		h2 {
-			text-shadow: 20px 6px 8px rgba(150, 150, 150, .5);
-		}
-	}
-	
 }
 
-.navbar-header h4 {
+.logo {
+	position: absolute;
+	color: #fff;
+	padding: .5em 1em 1em 1em;
+	top: 0;
+	left: 1em;
+	text-align: center;
+	h2 {
+		border-bottom: 1px solid #fff;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.slogan {
+	position: absolute;
+	color: #fff;
+	padding: .5em 1em;
+	font-family: 'Lato','Libre Baskerville', serif;
+	bottom: 5em;
+	left: 1em;
+	background: #CECFB0;
+	h2 {
+		font-size: 32px;
+		text-shadow: 20px 6px 8px rgba(150, 150, 150, .5);
+	}
+}
+
+.section-heading {
+	font-family: 'Libre Baskerville', serif;
+	// text-align: center;
+	color: #fff;
 	margin: 0;
+	font-size: 3em;
 }
 
-.heading {
-	font-size: 1.4em;
-    color: rgb(64, 64, 64);
+
+.section-blurb {
+	font-size: 1.3em;
+    // color: rgb(64, 64, 64);
     line-height: 1.5;
     font-weight: 300;
-    margin-bottom: 2em;
+    margin: 2em 0;
+    color: #fff;
     @include MQ(M) {
-    	 padding-left: 10%;
-    	padding-right: 10%;
+    	 padding-left: 5%;
+    	 padding-right: 5%;
     }
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 #tradition {
 	.vertical-center { 
@@ -105,17 +110,20 @@ body {
 }
 
 #fabric {
-	background: #CECFB0;
+	
+	background: lightgrey;
 	padding: 2em;
 }
 
 #lexicon {
-	padding-bottom: 2em;
+	background: #CECFB0;
+	padding: 2em;
 }
 
 .cont-img {
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 1em;
 }
 
 .cont-img img {
@@ -127,6 +135,13 @@ body {
 	transform: scale(1.1) rotate(1deg);
 	z-index: 9999;
 
+}
+
+.lex-heading {
+	// background: lightgrey;
+	padding: .3em;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
 }
 
 .where {
@@ -147,15 +162,6 @@ body {
 	}
 }
 
-.section-heading {
-	font-family: 'Libre Baskerville', serif;
-	text-align: center;
-}
-
-.section-heading {
-	font-family: 'Libre Baskerville', serif;
-	text-align: center;
-}
 
 
 .lexicon-heading {

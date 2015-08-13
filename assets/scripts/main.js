@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
-	var MQL = 1170;
+	// var MQL = 1170;
 
 	//primary navigation slide-in effect
-	if($(window).width() > MQL) {
+	// if($(window).width() > MQL) {
 		var headerHeight = $('.cd-header').height();
 		$(window).on('scroll',
 		{
@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 		    }
 		    this.previousTop = currentTop;
 		});
-	}
+	// }
 
 	var scrollObject = {};
 	window.onscroll = getScrollPosition;
@@ -73,10 +73,9 @@ jQuery(document).ready(function($){
 	    });
 	    $wall.imagesLoaded( function(){
 		  $wall.masonry({
-			columnWidth: 10,
+			columnWidth: 80,
 			itemSelector: '.item',
-			gutter: 5,
-			gutterWidth: 150,
+			// gutterWidth: 80,
 			isFitWidth: true,
 			transitionDuration: 0,
 	        animationOptions: {

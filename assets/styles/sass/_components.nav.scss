@@ -15,12 +15,9 @@ Modules - reusable parts of our design
 	@include font-smoothing;
 	padding: 2em;
 
-	// @include MQ(M) {
-	// 	height: $header-height-M;
-	// 	// background: transparent;
-	// 	box-shadow: none;
-	// 	padding-bottom: 2em;
-	// }
+	.logo {
+		display: none;
+	}
 	&.is-fixed {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
@@ -29,6 +26,9 @@ Modules - reusable parts of our design
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
+			.logo {
+				display: block;
+			}
 		}
 
 		&.is-visible {
@@ -169,7 +169,7 @@ Modules - reusable parts of our design
 
 		.cd-menu-text {
 			display: inline-block;
-			
+
 		}
 
 		.cd-menu-icon {
