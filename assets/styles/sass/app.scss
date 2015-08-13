@@ -19,15 +19,15 @@
 @import 'base.page';
 
 // Components
+@import 'components.nav.scss';
 @import 'components.masonry';
 @import 'components.footer';
 @import 'components.share';
+
 
 
 // Trumps
 @import 'trumps.position';
 
 @import 'boot';
-
-
 

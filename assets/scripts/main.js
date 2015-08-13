@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
 	}
 
 	//open/close primary navigation
-	$('.cd-primary-nav-trigger').on('click', function(){
+	$('.cd-primary-nav-trigger, .tt').on('click', function(){
 		$('.cd-menu-icon').toggleClass('is-clicked');
 		$('.cd-header').toggleClass('menu-is-open');
 
@@ -132,16 +132,4 @@ jQuery(document).ready(function($){
         });
     });
 
-    $(document).ready(function() {
-	  $("#accordion section h1").click(function(e) {
-	    $(this).parents().siblings("section").addClass("ac_hidden");
-	    $(this).parents("section").removeClass("ac_hidden");
-
-	    e.preventDefault();
-	  });
-
-	  
-	});
-
-	
 });

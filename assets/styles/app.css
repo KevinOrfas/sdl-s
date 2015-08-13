@@ -6921,6 +6921,10 @@ html, body {
   height: 100%;
   font-family: 'Lato', sans-serif; }
 
+body.overflow-hidden {
+  /* when primary navigation is visible, the content in the background won't scroll */
+  overflow: hidden; }
+
 .jumbotron {
   height: 100%;
   background: url('../images/IMG_1271.jpg') no-repeat;
@@ -7023,12 +7027,19 @@ html, body {
           transform: scale(1.1) rotate(1deg);
   z-index: 9999; }
 
-#where {
+.where {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_1488.jpg') no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_1488.jpg') no-repeat;
   background-size: cover;
+  background-position: center center;
   padding: 2em;
   color: #fff; }
+  @media only screen and (min-width: 768px) {
+    .where {
+      background-position: 0 0; } }
+  .where h4 {
+    font-size: 50px;
+    font-size: 3.125rem; }
 
 .section-heading {
   font-family: 'Libre Baskerville', serif;
@@ -7046,20 +7057,237 @@ html, body {
   background-color: rgba(190, 190, 190, 0.4); }
 
 .lex {
-  border-bottom: 1px solid orange;
-  -webkit-transform: rotate(-90deg) translate(-35%, 70px);
-      -ms-transform: rotate(-90deg) translate(-35%, 70px);
-          transform: rotate(-90deg) translate(-35%, 70px);
-  float: left;
-  z-index: 99999; }
+  border-bottom: 1px solid orange; }
+  @media only screen and (min-width: 1170px) {
+    .lex {
+      float: left;
+      -webkit-transform: rotate(-90deg) translate(-35%, 70px);
+          -ms-transform: rotate(-90deg) translate(-35%, 70px);
+              transform: rotate(-90deg) translate(-35%, 70px); } }
 
 .lex-2 {
-  border-bottom: 1px solid orange;
-  -webkit-transform: rotate(-90deg) translate(-50%, -30px);
-      -ms-transform: rotate(-90deg) translate(-50%, -30px);
-          transform: rotate(-90deg) translate(-50%, -30px);
-  float: left;
-  z-index: 99999; }
+  border-bottom: 1px solid orange; }
+  @media only screen and (min-width: 1170px) {
+    .lex-2 {
+      -webkit-transform: rotate(-90deg) translate(-50%, -30px);
+          -ms-transform: rotate(-90deg) translate(-50%, -30px);
+              transform: rotate(-90deg) translate(-50%, -30px);
+      float: left; } }
+
+/* --------------------------------
+Modules - reusable parts of our design
+-------------------------------- */
+.cd-header {
+  background: rgba(255, 255, 255, 0.5);
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2em; }
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -70px;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s; }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color: rgba(2, 23, 37, 0.96);
+    background-color: rgba(255, 255, 255, 0.5); }
+    .cd-header.menu-is-open a {
+      color: black; }
+  @media only screen and (min-width: 768px) {
+    .cd-header {
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      height: 70px;
+      background: transparent;
+      box-shadow: none;
+      padding-bottom: 2em;
+      /* Force Hardware Acceleration in WebKit */
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; } }
+
+.cd-secondary-nav {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* hidden on small devices */ }
+  .cd-secondary-nav li {
+    display: inline-block;
+    margin-left: 2.2em; }
+    .cd-secondary-nav li:first-child {
+      margin-left: 0; }
+  .cd-secondary-nav a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700; }
+  @media only screen and (min-width: 768px) {
+    .cd-secondary-nav {
+      right: 10em; } }
+
+.cd-primary-nav-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px; }
+  .cd-primary-nav-trigger .cd-menu-text {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* hide the text on small devices */
+    display: none; }
+  .cd-primary-nav-trigger .cd-menu-icon {
+    /* this span is the central line of the menu icon */
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    /* these are the upper and lower lines in the menu icon */ }
+    .cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #fff;
+      right: 0;
+      -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+      transition: transform .3s, top .3s, background-color 0s; }
+    .cd-primary-nav-trigger .cd-menu-icon::before {
+      top: -5px; }
+    .cd-primary-nav-trigger .cd-menu-icon::after {
+      top: 5px; }
+    .cd-primary-nav-trigger .cd-menu-icon.is-clicked {
+      background-color: rgba(255, 255, 255, 0); }
+      .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+        background-color: #111111; }
+      .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg); }
+      .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+        top: 0;
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg); }
+  @media only screen and (min-width: 768px) {
+    .cd-primary-nav-trigger {
+      width: 100px;
+      padding-left: 1em;
+      background-color: transparent;
+      height: 30px;
+      line-height: 30px;
+      right: 2.2em;
+      top: 50%;
+      bottom: auto;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .cd-primary-nav-trigger .cd-menu-text {
+        display: inline-block; }
+      .cd-primary-nav-trigger .cd-menu-icon {
+        left: auto;
+        right: 1em;
+        -webkit-transform: translateX(0) translateY(-50%);
+        -ms-transform: translateX(0) translateY(-50%);
+        transform: translateX(0) translateY(-50%); } }
+
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(2, 23, 37, 0.96);
+  background: #CECFB0;
+  z-index: 2;
+  padding: 50px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  list-style: none;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s; }
+  .cd-primary-nav li {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: .2em 0;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-size: 2.5rem; }
+    @media only screen and (min-width: 768px) {
+      .cd-primary-nav li {
+        font-size: 70px;
+        font-size: 4.375rem; } }
+  .cd-primary-nav a {
+    display: inline-block;
+    padding: .4em 1em;
+    border-radius: 0.25em;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    color: #fff; }
+    .no-touch .cd-primary-nav a:hover {
+      background-color: #e36767; }
+  .cd-primary-nav .cd-label {
+    color: #06446e;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin: 2.4em 0 .8em;
+    padding: 0.4em 1em; }
+  .cd-primary-nav.is-visible {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  @media only screen and (min-width: 768px) {
+    .cd-primary-nav {
+      padding: 70px 0 0 20em; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-primary-nav li {
+      font-size: 55px;
+      font-size: 3.4375rem; }
+    .cd-primary-nav .cd-label {
+      font-size: 30px;
+      font-size: 1.875rem; } }
 
 /*** Mansonry ***/
 .container.masonry {
@@ -7100,17 +7328,22 @@ html, body {
   color: #fff;
   z-index: 1;
   bottom: 0;
-  padding: .5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 8em .5em 0 .5em;
+  text-transform: uppercase;
   text-align: center;
-  background: grey; }
+  background: #3B1C05;
+  background: rgba(59, 28, 5, 0.5); }
 
 .img-fabric:hover:after, .img-fabric:hover:before {
   opacity: 1; }
 
 @media screen and (min-width: 1000px) {
   .item {
-    width: 27em;
-    margin: .5em; } }
+    width: 27em; } }
 
 /* Transitions */
 .masonry, .masonry .masonry-item {
