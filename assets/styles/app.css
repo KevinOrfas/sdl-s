@@ -6970,7 +6970,7 @@ body.modal-open {
   font-size: 3em; }
   .section-heading:after {
     content: "";
-    background: #ccc;
+    background: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
