@@ -7078,7 +7078,7 @@ body.modal-open {
           transform: scale(1.1) rotate(1deg);
   z-index: 9999; }
 
-.lex-heading {
+.lex-heading .fab-heading {
   padding: .3em;
   text-shadow: 1px 1px 1px black;
   cursor: pointer; }
@@ -7413,6 +7413,9 @@ footer {
 
 .share-widget__heading {
   margin-bottom: 1em; }
+
+.share-widget__icons {
+  padding: 0; }
 
 .share-widget__icons li {
   display: inline-block;
