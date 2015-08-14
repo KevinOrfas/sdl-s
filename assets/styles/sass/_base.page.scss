@@ -13,7 +13,7 @@ body {
 	}
 }
 
-.jumbotron {
+.1jumbotron {
 	height: 100%;
 	background: url('../images/IMG_1271.jpg') no-repeat;
 	background: url('../images/IMG_1476.jpg') no-repeat;
@@ -31,6 +31,7 @@ body {
 	top: 0;
 	left: 1em;
 	text-align: center;
+	z-index: 999999;
 	h2 {
 		border-bottom: 1px solid #fff;
 		padding: 0;
@@ -54,10 +55,19 @@ body {
 
 .section-heading {
 	font-family: 'Libre Baskerville', serif;
-	// text-align: center;
+	// border-bottom: 1px solid black;
 	color: #fff;
 	margin: 0;
 	font-size: 3em;
+	&:after {
+	  content: "";
+	  background: #ccc;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  height: 1px;
+	  width: 340px;
+	}
 }
 
 
@@ -72,6 +82,59 @@ body {
     	 padding-left: 5%;
     	 padding-right: 5%;
     }
+}
+
+#story {
+	background: #C9BD9B;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/story/IMG_0212.jpg') no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 2em;
+	p {
+		color: #fff;
+	}
+	h4 {
+		text-shadow: 1px 1px 1px black;
+	}
+}
+
+#myCarousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.carousel-caption {
+	left: 2%;
+	text-align: left;
+}
+.carousel-inner {
+	height: 100%;
+
+}
+.carousel-inner .item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ad1 {
+    background: url('../images/IMG_1476.jpg');
+}
+
+.ad2 {
+    background: url('../images/IMG_1271.jpg');
+}
+
+.ad3 {
+    background: url('../images/IMG_1448-2.jpg');
 }
 
 
@@ -102,6 +165,11 @@ body {
 		}
 		
 	}
+}
+.test {
+	background: #CECFB0;
+	padding: 1em;
+	width: 50%;
 }
 
 .navbar-fixed-top {

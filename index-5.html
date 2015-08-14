@@ -45,42 +45,69 @@
       </nav> <!-- cd-nav -->
    
       <a class="cd-primary-nav-trigger" href="#">
-        <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+        <span class="cd-menu-text"></span><span class="cd-menu-icon"></span>
       </a> <!-- cd-primary-nav-trigger -->
     </header>
  
     <nav>
       <ul class="cd-primary-nav">
-        <li class="cd-label">Interior Design</li>
-     
-        <li><a class="tt" href="/index-4.html#fabric">Fabric</a></li>
-        <li><a class="tt" href="/index-4.html#lexicon">Lexicon of Fabric</a></li>
-        <li><a class="tt" href="/index-4.html#where">Get in touch</a></li>
-        <li><!-- ... --></li>
-
-        <li class="cd-label">The story</li>
-     
-        <li><a class="tt" href="#">Our weaving</a></li>
-        <li><a class="tt" href="/tradition.html">The tradition of hand-weaving in Lao PDR (Laos)</a></li>
-        <li><a class="tt" href="#">News</a></li>
-
-        <li class="cd-label">Designers</li>
-     
-        <li><a class="tt" href="#">Lauren Hwang New York</a></li>
+        <li><a class="tt" href="/index-5.html#fabric">Fabric</a></li>
+        <li><a class="tt" href="/index-5.html#lexicon">Lexicon of Fabric</a></li>
+        <li><a class="tt" href="/index-5.html#story">Story</a></li>
+        <li><a class="tt" href="/index-5.html#where">Get in touch</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="jumbotron">
+  
     <div class="logo">
       <h2>Soie de lune </h2>
       <span>Luxurious hand wooven silks</span>
     </div>
     
-    <div class="slogan text-center">
-      <h2>Bespoke fabric creation for the world of interior design</h2>  
+   <!--  <div class="slogan text-center">
+      
+    </div> -->
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active ad1">
+      <div class="carousel-caption">
+          <h2 class="test">Bespoke fabric creation for the world of interior design</h2>
+          
+      </div>
     </div>
-  </section>
+    <div class="item ad2">
+      <div class="carousel-caption">
+        <h2>Bespoke fabric creation for the world of interior design</h2>
+      </div>
+    </div>
+    <div class="item ad3">
+      <div class="carousel-caption">
+        <h2>Bespoke fabric creation for the world of interior design</h2>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
    
     <section id="fabric">
       <div class="container-boot">
@@ -200,19 +227,62 @@
         </div>
       </div>
     </section>
+    <section id="story">
+      <div class="container-boot">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-heading">Our Story</h1>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <h2></h2>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <h4>The company</h4>
+            <p>
+              Soie de Lune is a London-based company that was founded in 2004. It has its own workshop in Vientiane, Laos, a country in South East Asia famous for its hand weaving skills.
+            </p>
+            <button class="btn btn-default">Read on</button>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <h4>Our customers</h4>
+            <p>
+              We count amongst our customers the world’s most renowned and creative interior designers. Each piece of woven fabric is meticulously created and is akin to a work of art. 
+            </p>
+            <button class="btn btn-default">Read on</button>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <h4>The tradition of hand weaving in Lao PDR (Laos)</h4>
+            <p>
+              Traditional woven textiles, through the woven motifs and quality of yarn, express the beliefs and cultures of a particular society in addition to their decorative nature, color and beauty. 
+            </p>
+            <button class="btn btn-default">Read on</button>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <h4>News</h4>
+            <p>
+              Read the latest news
+            </p>
+            <button class="btn btn-primary">Read on</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="where" class="where">
 
-      <div class="container-fluid">
+      <div class="container-boot">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center section-heading-v-2">Get in touch</h1>
+            <h1 class="section-heading">Get in touch</h1>
           </div>
         </div>
-    
-        <div class="row text-center">
-        <div class="col-md-6">
+      </div>
+      <div class="container-fluid">
+        <div class="row ">
+        <div class="col-md-6 text-center">
           <h3>Where to buy</h3>
           <div class="col-md-6 col-sm-6">
             <h4>London</h4>
@@ -264,9 +334,9 @@
             </address>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h3>Social</h3>
-           <div class="share-widget text-center">
+           <div class="share-widget">
           <!-- <h4 class="share-widget__heading">Social Share</h4> -->
           <ul class="share-widget__icons">
             <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
@@ -274,14 +344,23 @@
             <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-12">
-          <form action="">
-            <label for="">Name</label> <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea> <br>
-            <button class="btn btn-default">Send</button>
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+           
+            <div class="form-group">
+              <!-- <label for="textarea"></label> -->
+              <textarea class="form-control" id="textarea" placeholder="Say hello"></textarea>
+            </div>
+           
+           
+            <button type="submit" class="btn btn-default">Send</button>
           </form>
         </div>
-        </div>
+      </div>
 
 
         </div>
@@ -439,8 +518,11 @@
   <script type="text/javascript" src="assets/scripts/vendor/bootstrap.js"></script>
   <script>
   $(function () {
-  $('[data-toggle="popover"]').popover()
-})
+    $('[data-toggle="popover"]').popover();
+  });
+  $('.carousel').carousel({
+    interval: false
+  })
   </script>
   <!-- Plug-ins -->
   <script src="assets/scripts/vendor/masonry.pkgd.js"></script>
