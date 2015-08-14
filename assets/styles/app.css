@@ -6990,8 +6990,8 @@ body.modal-open {
 
 #story {
   background: #C9BD9B;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/story/IMG_0212.jpg') no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/story/IMG_0212.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_4964.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_4964.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 2em; }
@@ -7020,10 +7020,10 @@ body.modal-open {
   background-position: center center; }
 
 .ad1 {
-  background: url('../images/IMG_1476.jpg'); }
+  background: url('../images/L_4984.jpg'); }
 
 .ad2 {
-  background: url('../images/IMG_1271.jpg'); }
+  background: url('../images/IMG_1157.jpg'); }
 
 .ad3 {
   background: url('../images/IMG_1448-2.jpg'); }
@@ -7084,8 +7084,8 @@ body.modal-open {
   cursor: pointer; }
 
 .where {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_1488.jpg') no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/IMG_1488.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/L_4974.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/L_4974.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 2em;
