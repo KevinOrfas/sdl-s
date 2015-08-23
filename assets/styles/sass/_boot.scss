@@ -22,20 +22,7 @@ h2 {
 	margin: .5em 0;
 }
 
-// .jumbotron {
-//     padding-top: 0 ;
-// }
 
-.init-img {
-	position: relative;
-	background: url('../images/IMG_1467-2.jpg') no-repeat;
-	background-size: cover;
-	height: 700px;
-	width: 100%;
-	text-align: center;
-	padding: 0;
-
-}
 
 blockquote {
 	position: absolute;
@@ -60,12 +47,49 @@ blockquote {
 .navbar-default {
 	border: 0;
 	background: #fff;
+	background: rgba(255, 255, 255, 0);
+
 }
 
-.navbar-default.dirty {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+.navbar-default .navbar-nav > li > a{
+	color: #111;
+	color: #DCEAEB;
+	font-weight: 300;
+	@include MQ(M) {
+		color:#fff;
+		// color: #DCEAEB;
+	}
 }
 
+.navbar-brand {
+	padding: 0
+}
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border: 0;
+	// background-color: rgba(195, 198, 159, 1);
+	background: rgba(255, 255, 255, .7);
+    margin-top: 2em;
+    text-align: center;
+    @include MQ(M) {
+    	background: rgba(255, 255, 255, 0);
+    	margin-top: 0;
+
+    }
+}
+
+.nav > li {
+	display: inline-block;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-fixed-top {
+	padding: 2em;
+	background: rgba(255,255,255,.7) !important;
+}
 

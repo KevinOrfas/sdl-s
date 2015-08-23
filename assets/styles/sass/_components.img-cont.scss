@@ -1,0 +1,16 @@
+.cont-img {
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.cont-img img {
+	opacity: 1;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.cont-img img:hover {
+	transform: scale(1.1) rotate(1deg);
+	z-index: 9999;
+
+}

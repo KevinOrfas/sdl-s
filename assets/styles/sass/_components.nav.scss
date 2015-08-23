@@ -5,7 +5,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 
 .cd-header {
-	background: rgba(255,255,255,.5);
+	background: rgba(255,255,255,0);
 	height: $header-height-S;
 	left: 0;
 	position: absolute;
@@ -15,20 +15,18 @@ Modules - reusable parts of our design
 	@include font-smoothing;
 	padding: 2em;
 
-	.logo {
-		display: none;
-	}
+	// .logo {
+	// 	display: none;
+	// }
 	&.is-fixed {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
-			top: -$header-height-M;
-			background: rgba(255,255,255,.5);
-			-webkit-transition: -webkit-transform 0.3s;
-			-moz-transition: -moz-transform 0.3s;
+			// top: -$header-height-M;
+			// background: rgba(255,255,255,.5);
 			transition: transform 0.3s;
-			.logo {
-				display: block;
-			}
+			// .logo {
+			// 	display: block;
+			// }
 		}
 
 		&.is-visible {
@@ -43,23 +41,23 @@ Modules - reusable parts of our design
 			a {
 				color:black;
 			}
-			
+
 		}
 
-	@include MQ(M) {
-		@include transition(background-color .3s);
-		height: $header-height-M;
-		background: transparent;
-		box-shadow: none;
-		padding-bottom: 2em;
-		/* Force Hardware Acceleration in WebKit */
-		@include transform(translate3d(0,0,0));
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
+	// @include MQ(M) {
+	// 	@include transition(background-color .3s);
+	// 	height: $header-height-M;
+	// 	background: transparent;
+	// 	box-shadow: none;
+	// 	padding-bottom: 2em;
+	// 	/* Force Hardware Acceleration in WebKit */
+	// 	@include transform(translate3d(0,0,0));
+	// 	-webkit-backface-visibility: hidden;
+	// 	backface-visibility: hidden;
 
-		
-	}
- 
+
+	// }
+
 }
 
 .cd-secondary-nav {
@@ -191,6 +189,7 @@ Modules - reusable parts of our design
 	// background: rgba(167, 119, 105, 0.96);
 	background: #CECFB0;
 	z-index: $nav-zindex;
+
 	// text-align: center;
 	padding: $header-height-S 0;
 	-webkit-backface-visibility: hidden;
@@ -210,7 +209,7 @@ Modules - reusable parts of our design
 		margin: .2em 0;
 		text-transform: capitalize;
 		@include font-size(40px);
-		@include MQ(M) { 
+		@include MQ(M) {
 			@include font-size(70px);
 		}
 	}
@@ -235,10 +234,11 @@ Modules - reusable parts of our design
 		padding: 0.4em 1em;
 	}
 
-	
+
 
 	&.is-visible {
 		@include transform(translateY(0));
+
 	}
 
 	@include MQ(M) {
@@ -255,3 +255,5 @@ Modules - reusable parts of our design
 		}
 	}
 }
+
+

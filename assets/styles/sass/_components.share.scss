@@ -1,10 +1,14 @@
 .share-widget {
-    margin: 3.5em 0;
+    // margin: 3.5em 0;
+    padding-top: .5em;
 
 }
 
 .share-widget__heading {
-    margin-bottom: 1em;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: center;
 }
 
 .share-widget__icons {
@@ -14,28 +18,30 @@
 .share-widget__icons li {
     display: inline-block;
     margin: 0 5px;
-    @include MQ(L) { 
+    @include MQ(L) {
         margin: 0;
     }
 }
 
-.share-widget__icons a { 
+.share-widget__icons a {
     border-radius: 50%;
     border: 1px solid #bebebe;
     color: #504e4f;
-    color: #fff;
+    // color: #fff;
     display: inline-block;
     height: 40px;
     line-height: 40px;
     text-align: center;
     transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, margin 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s, background 0.3s ease 0s, color 0.2s ease 0s, border 0.3s ease 0s;
     width: 40px;
-    
-    @include MQ(M) { 
+
+    @include MQ(M) {
         margin-left: 10px;
 
     }
 }
+
+
 
 .share-widget__icons a:hover {
     background: #474747;

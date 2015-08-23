@@ -13,221 +13,270 @@ body {
 	}
 }
 
-.1jumbotron {
-	height: 100%;
-	background: url('../images/IMG_1271.jpg') no-repeat;
-	background: url('../images/IMG_1476.jpg') no-repeat;
-	
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	margin: 0;
-}
 
 .logo {
-	position: absolute;
 	color: #fff;
-	padding: .5em 1em 1em 1em;
-	top: 0;
-	left: 1em;
-	text-align: center;
-	z-index: 999999;
+	// color: #DCEAEB;
+	// font-family: 'Libre Baskerville', serif;
+
 	h2 {
 		border-bottom: 1px solid #fff;
-		padding: 0;
 		margin: 0;
+		padding: 0 0 0.1em;
+		font-weight: 300;
 	}
 }
 
-.slogan {
-	position: absolute;
-	color: #fff;
-	padding: .5em 1em;
-	font-family: 'Lato','Libre Baskerville', serif;
-	bottom: 5em;
-	left: 1em;
-	background: #CECFB0;
-	h2 {
-		font-size: 32px;
-		text-shadow: 20px 6px 8px rgba(150, 150, 150, .5);
-	}
+.logo > span {
+    font-size: 0.75em;
+	font-weight: 400;
+}
+
+
+#fabric {
+	background: rgba(246,245,237,.6);
+	background: #FAF6E4;
+	padding: 2em;
 }
 
 .section-heading {
-	font-family: 'Libre Baskerville', serif;
-	// border-bottom: 1px solid black;
-	color: #fff;
-	margin: 0;
+	// font-family: 'Libre Baskerville', serif;
+	color: darken(#CECFB0, 40%);
 	font-size: 3em;
-	&:after {
-	  content: "";
-	  background: #fff;
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  height: 1px;
-	  width: 340px;
-	}
+	margin: 0;
 }
 
 
 .section-blurb {
-	font-size: 1.3em;
+	font-size: .8em;
     // color: rgb(64, 64, 64);
-    line-height: 1.5;
+    color: #000000;
+    color: darken(#CECFB0, 40%);
     font-weight: 300;
+    line-height: 1.5;
     margin: 2em 0;
-    color: #fff;
+    text-align: justify;
     @include MQ(M) {
-    	 padding-left: 5%;
-    	 padding-right: 5%;
+    	 // padding-left: 5%;
+    	 // padding-right: 5%;
+    	 font-size: 1.3em;
     }
+}
+
+.fab-heading {
+	cursor: pointer;
+	padding: .5em .2em;
+	margin-top: 0;
+	// background: darken(#CECFB0, 40%);
+	color: darken(#CECFB0, 40%);
+	text-shadow: 0 1px 1px #CECFB0;
+}
+
+
+
+// #tradition {
+// 	.vertical-center {
+// 		min-height: 40vh;
+// 	}
+// 	.jumbotron {
+// 		height: 40%;
+// 		.lead {
+// 			margin: 130px;
+// 		}
+// 	}
+// }
+
+// .social {
+// 	display: inline-block;
+// 	position: relative;
+// 	li{
+// 		display: inline-block;
+// 		left: 0;
+//     	margin: 0;
+//     	// padding: 1em 0 0;
+
+// 		a {
+// 			color: #777;
+// 		}
+
+// 	}
+// }
+
+
+
+
+#lexicon {
+	background: #CECFB0;
+	background: #DCEAEB;
+	background: tint(#F6FAE4, 30%);
+	padding: 2em;
+	.fab-heading {
+		font-size: 15px;
+		@include MQ(M) {
+			font-size: 20px;
+		}
+	}
+	// .section-heading {
+	// 	color: #fff;
+	// }
+}
+
+.lex-heading {
+	// background: lightgrey;
+	padding: .3em;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	font-size: 14px;
+	@include MQ(M) {
+		font-size: 20px;
+	}
+}
+
+.modal-header {
+	padding: 15px 15px 0 0;
+	border: 0;
+	height: 0;
+}
+
+
+.modal-body{
+	background-size: cover;
+	p {
+		color: #fff !important;
+		font-weight: 300;
+	}
+}
+
+#silks .modal-content{
+	background-image: url('../images/lexicon/Handwoven_Silks_L_5061.jpg');
+}
+
+#sheers .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/Handwoven_Silks_L_5860.jpg') no-repeat;
+}
+
+#linen .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/Italian_SIlks_IMG_0425.jpg') no-repeat;
+}
+
+#italian .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/Italian_SIlks_IMG_0425.jpg') no-repeat;
+}
+
+#stocked .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/Stocked_Handweaves_L_5925.jpg') no-repeat;
+}
+
+#linens .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/IMG_0922.jpg') no-repeat;
+}
+
+#mohair .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/Mohair_Velvet_IMG_0981.jpg') no-repeat;
+}
+
+#wool .modal-content{
+	// background-image: url('../images/lexicon/Handwoven_Silks_L_5860.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/lexicon/IMG_0947.jpg') no-repeat;
+}
+
+button.close {
+	color: #fff;
+	opacity: .7;
+	&:hover {
+		color: #fff;
+		opacity: 1;
+	}
+}
+
+
+
+.where {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+     url('../images/2.5_IMG_1354.jpg') no-repeat;
+	background-size: cover;
+	// background-position: center center;
+	padding: 2em;
+	// height: 75%;
+	color: #faf6e4;
+	.section-heading {
+		color: #faf6e4;
+	}
+
+	.section-blurb {
+		color: #faf6e4;
+	}
+}
+
+.is-copyright {
+	padding-top: 2em;
 }
 
 #story {
 	background: #C9BD9B;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
      url('../images/IMG_4964.jpg') no-repeat;
 	background-size: cover;
 	background-position: center center;
 	padding: 2em;
+	// height: 75%;
 	p {
-		color: #fff;
+		color: #faf6e4;
 	}
-	h4 {
-		text-shadow: 1px 1px 1px black;
-	}
-}
-
-#myCarousel {
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-}
-
-.carousel-caption {
-	left: 2%;
-	text-align: left;
-}
-.carousel-inner {
-	height: 100%;
-
-}
-.carousel-inner .item {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.ad1 {
-    background: url('../images/L_4984.jpg');
-}
-  
-.ad2 {
-    background: url('../images/IMG_1157.jpg');
-}
-
-.ad3 {
-    background: url('../images/IMG_1448-2.jpg');
-}
-
-
-
-#tradition {
-	.vertical-center { 
-		min-height: 40vh;
-	}
-	.jumbotron {
-		height: 40%;
-		.lead {
-			margin: 130px;
-		} 
-	}
-}
-
-.social {
-	display: inline-block;
-	position: relative;
-	li{
+	a {
+		color: #faf6e4;
+		border-bottom: 1px solid #faf6e4;
 		display: inline-block;
-		left: 0;
-    	margin: 0;
-    	// padding: 1em 0 0;
-    	
-		a {
-			color: #777;
-		}
-		
+		margin-bottom: 1em;
+
 	}
-}
-.test {
-	background: #CECFB0;
-	padding: 1em;
-	width: 50%;
-}
-
-.navbar-fixed-top {
-	padding: 2em;
-	background: rgba(255,255,255,.7) !important;
-}
-
-#fabric {
-	
-	background: lightgrey;
-	padding: 2em;
-}
-
-#lexicon {
-	background: #CECFB0;
-	padding: 2em;
-}
-
-.cont-img {
-	overflow: hidden;
-	position: relative;
-	margin-bottom: 1em;
-}
-
-.cont-img img {
-	opacity: 1;
-	transition: all 0.2s ease-in-out 0s;
-}
-
-.cont-img img:hover {
-	transform: scale(1.1) rotate(1deg);
-	z-index: 9999;
-
-}
-
-.lex-heading
-.fab-heading {
-	// background: lightgrey;
-	padding: .3em;
-	text-shadow: 1px 1px 1px black;
-	cursor: pointer;
-}
-
-.where {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
-    ),
-     url('../images/L_4974.jpg') no-repeat;
-	background-size: cover;
-	background-position: center center;
-	padding: 2em;
-	color: #fff;
-	@include MQ(M) {
-		background-position: 0 0;
+	.fab-heading {
+		color: #faf6e4;
+		padding: 0;
+		margin: 0;
 	}
-	h4 {
-		@include font-size(50px);
+	.section-heading {
+		color: #faf6e4;
 	}
 }
 
