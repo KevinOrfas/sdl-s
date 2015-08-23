@@ -7040,9 +7040,10 @@ button.close {
     opacity: 1; }
 
 .where {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/2.5_IMG_1354.jpg') no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/2.5_IMG_1354.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/SALA-Ottoman-3_4.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/SALA-Ottoman-3_4.jpg') no-repeat;
   background-size: cover;
+  background-position: center center;
   padding: 2em;
   color: #faf6e4; }
   .where .section-heading {
@@ -7061,7 +7062,8 @@ button.close {
   background-position: center center;
   padding: 2em; }
   #story p {
-    color: #faf6e4; }
+    color: #faf6e4;
+    padding-right: 15%; }
   #story a {
     color: #faf6e4;
     border-bottom: 1px solid #faf6e4;
