@@ -1,4 +1,4 @@
-<?php if (!defined('PERCH_RUNWAY')) include($_SERVER['DOCUMENT_ROOT'].'/sdl-perch/perch/runtime.php'); 
+<?php if (!defined('PERCH_RUNWAY')) include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); 
 
     perch_layout('global.top');
 
