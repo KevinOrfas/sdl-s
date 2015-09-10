@@ -7199,7 +7199,6 @@ address a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/lexicon/L_0483.jpg'); }
 
 .carousel-background--three {
-  background-size: cover;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/home_img_03-new.png');
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/home_img_03-new.png'); }
 
@@ -7757,7 +7756,7 @@ button.close {
 .embed-responsive-16by9 {
   padding-bottom: 46.25%; }
 
-.fabrics .carousel {
+.fabrics.carousel {
   height: 70%; }
 
 .jumbotron.bg {
