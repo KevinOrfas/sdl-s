@@ -1,5 +1,5 @@
-<?php include('perch/runtime.php'); 
-	
+<?php include('perch/runtime.php');
+
 	perch_layout('global.top');
 
 	perch_content('Carousel');
