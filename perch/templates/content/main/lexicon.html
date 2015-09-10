@@ -1,0 +1,32 @@
+<section class="section section--lexicon" id="lexicon">
+  <div class="container-boot">
+    <div class="row">
+      <div class="col-md-12">
+          <h1 class="section__heading"><perch:content id="lexicon-section-heading" type="text" label="Section Heading" required="true"/></h1>
+          <p class="section__blurb"><perch:content id="lexicon-blurb" type="textarea" label="Lexicon - Main Paragraph" size="s" textile="false" editor="markitup" /></p>
+      </div>
+    </div>
+    <div class="row">
+    <perch:repeater id="lexicon-images" label="Images" max="8">
+      <div class="col-md-3 col-xs-6">
+        <div class="cont-img" data-toggle="modal" data-target="#<perch:content id="modal-id" title="false" type="text" label="Popup ID" help="Add one word, lowercase #id for popup to work" required="true" order="4"/>" >
+          <img src="<perch:content id="lex-image" type="image" label="Picture" order="2" width="1000" height="667" crop="true"/>" alt="<perch:content id="lex-image-description" type="text" label="Image description" help="Add a description of the image (will not appear on site)" order="3"/>">
+        </div>
+        <h4 class="fab-heading" data-toggle="modal" data-target="#<perch:content id="modal-id" title="false" type="text" label="Popup ID" help="Add one word, lowercase #id for popup to work" required="true" order="4"/>"><perch:content id="lex-image-heading" html="false" title="false" type="smarttext" label="Heading" help="Add heading to the image" required="true" order="1"/></h4>
+      </div>
+
+      <!--Modal -->
+      <div class="modal fade" id="<perch:content id="modal-id" title="false" type="text" label="Popup ID" help="Add one word, lowercase #id for popup to work" required="true" order="4"/>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-image:url('<perch:content id="lex-image" type="image" label="Picture" order="2" width="1000" height="667" crop="true"/>')">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>           
+              <h4 class="modal-title"><perch:content id="lex-image-heading" html="false" title="false" type="smarttext" label="Heading" help="Add heading to the image" required="true" order="1"/></h4>
+              <p><perch:content id="lex-modal-blurb" type="textarea" label="Pop-up Main Paragraph" size="s" textile="false" editor="markitup" /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </perch:repeater>
+  </div>
+</section>

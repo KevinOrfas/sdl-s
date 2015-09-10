@@ -1,0 +1,21 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carousel-background--one" style="background-image:url('<perch:content id="carousel-image-one" type="image" label="Carousel Image 1" divider-before="Main Images"/>')"></div>
+    <div class="item carousel-background--two" style="background-image:url('<perch:content id="carousel-image-two" type="image" label="Carousel Image 2" />')"></div>
+    <div class="item carousel-background--three" style="background-image:url('<perch:content id="carousel-image-three" type="image" label="Carousel Image 3" />')"></div>
+    <h2 class="carousel-caption">
+      <perch:content id="caption" type="text" label="Caption" required="true"/>
+    </h2>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

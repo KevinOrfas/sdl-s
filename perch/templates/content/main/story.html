@@ -1,0 +1,45 @@
+<section class="section section--story" id="story" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('<perch:content type="image" id="background-image" label="Background Image" require="true"/>')">
+  <div class="container-boot">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="section__heading section__heading--rev"><perch:content id="story-section-heading" type="text" label="Section Heading" required="true"/></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <perch:repeater id="story-sections" label="Story Sections" max="4">
+      <div class="col-md-6 col-xs-12 col-sm-6">
+        <a href="">
+          <h4 class="story-link">
+           <perch:content id="item-heading" html="false" title="false" type="smarttext" label="Heading" help="Add heading to the item" required="true" order="1"/>
+          </h4>
+        </a>
+        <p class="section__blurb section__blurb--rev">
+         <perch:content id="fabrics-blurb" type="textarea" label="Section Paragraph" size="s" textile="false" editor="markitup" order="2" />
+         <a class="read-more" href="<perch:content id="item-link" html="true" title="false" type="text" label="Link" help="Read more link" required="false" order="3"/>">Read more</a>
+        </p>
+      </div>
+      </perch:repeater>
+      <!-- <div class="col-md-6 col-xs-12 col-sm-6">
+        <a href="" style=" "><h4 class="fab-heading">Our Customers</h4></a>
+        <p>
+          We count amongst our customers the world’s most renowned and creative interior designers. Each piece of woven fabric is meticulously created and is akin to a work of art.
+        </p>
+      </div>
+      <div class="col-md-6 col-xs-12 col-sm-6">
+        <a href=""><h4 class="fab-heading">The tradition of hand weaving in Lao PDR (Laos)</h4></a>
+        <p>
+          Traditional woven textiles, through the woven motifs and quality of yarn, express the beliefs and cultures of a particular society in addition to their decorative nature, color and beauty.
+        </p>
+
+      </div>
+      <div class="col-md-6 col-xs-12 col-sm-6">
+        <a href=""><h4 class="fab-heading" >Lauren Hwang New York </h4></a>
+        <p>
+          Our dedicate designer based in New York
+        </p>
+
+      </div> -->
+
+  </div>
+</section>

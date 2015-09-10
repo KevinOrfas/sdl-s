@@ -1,0 +1,21 @@
+<section class="section section--fabric" id="fabric">
+      <div class="container-boot">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section__heading"><perch:content id="fabrics-section-heading" type="text" label="Section Heading" required="true"/></h1>
+            <p class="section__blurb"><perch:content id="fabrics-blurb" type="textarea" label="Fabric - Main Paragraph" size="s" textile="false" editor="markitup" /></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <perch:repeater id="images" label="Images" max="6">
+          <div class="col-md-4">
+            <div class="cont-img">
+              <img src="<perch:content id="image-1" type="image" label="Picture" order="2" width="1000" height="667" crop="true"/>" alt="<perch:content id="image-1-description" type="text" label="Image description" help="Add a description of the image (will not appear on site)" order="3"/>">
+            </div>
+            <h4 class="fabric-link"><perch:content id="picture-1-heading" html="false" title="false" type="smarttext" label="Heading" help="Add heading to the image" required="true" order="1"/></h4>
+          </div>
+          </perch:repeater>
+        </div>
+      </div>
+    </section>

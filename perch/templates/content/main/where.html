@@ -1,0 +1,106 @@
+<section id="touch" class="section section--where" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('<perch:content type="image" id="background-image" label="Background Image" require="true"/>')">
+      <div class="container-boot">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section__heading section__heading--rev">Get In Touch</h1>
+          </div>
+        </div>
+        <div class="row">
+          <perch:repeater id="contact" label="Contact Info" max="4">
+          <div class="col-md-3 col-sm-6">
+            <address class="address">
+              <h2 class="address__city"><perch:content id="city" type="text" label="City" required="true" /></h2>
+              <h3 class="address__company-name"><perch:content id="company-name" type="text" label="Company Name" required="true" /></h3>
+              <span class="address__details">
+                <strong><i class="glyphicon glyphicon-map-marker"></i></strong>
+                <perch:content id="address-1" type="text" label="Address Line 1" required="true" />
+              </span>
+              <span class="address__details"><perch:content id="address-2" type="text" label="Address Line 2" required="false" /></span>
+              <span class="address__details"><perch:content id="address-3" type="text" label="City" required="true" /></span>
+              <span class="address__details"><perch:content id="address-4" type="text" label="Postcode/Zip" required="true" /></span>
+              <span class="address__details"><perch:content id="address-5" type="text" label="Country" required="true" /></span>
+              <span class="address__details">
+              <strong><i class="glyphicon glyphicon-earphone"></i></strong>
+                <perch:content id="address-6" type="text" label="Telephone Number" required="true" />
+              </span>
+              <strong><i class="glyphicon glyphicon-envelope"></i></strong>
+              <a href="mailto:<perch:content id="address-7" type="text" label="Email" required="true" />"><perch:content id="address-7" type="text" label="Email" required="true" /></a><br>
+              <a href="<perch:content id="address-8" type="text" label="Website" required="true" />"><perch:content id="address-8" type="text" label="Website" required="true" /></a>
+            </address>
+          </div>
+          </perch:repeater>
+          <!-- <div class="col-md-3 col-sm-6">
+            <address>
+              <h2 class="address__city">Paris</h2>
+              <h3 class="address__company-name">Jules et Jim </h3>
+              <span class="address__details">
+                <strong>
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                </strong>
+                1 Rue Thérèse
+              </span>
+              <span class="address__details">75001 Paris </span>
+              <span class="address__details">France </span>
+              <span class="address__details">
+                <strong> <i class="glyphicon glyphicon-earphone"></i> </strong>
+                +33 1 43 14 02 10
+              </span>
+              <strong><i class="glyphicon glyphicon-envelope"></i></strong>
+              <a href="">info@julesetjim.fr</a> <br>
+              <a href="">www.julesetjim.fr </a><br>
+            </address>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <address>
+              <h2 class="address__city">New York</h2>
+              <h3 class="address__company-name">Lauren Hwang Bespoke </h3>
+              <span class="address__details">
+                <strong><i class="glyphicon glyphicon-map-marker"></i></strong>
+                360 Furman Street
+              </span>
+              <span class="address__details">Brooklyn, NY 11201 </span>
+              <span class="address__details">USA</span>
+              <span class="address__details">
+                <strong><i class="glyphicon glyphicon-earphone"></i></strong>
+                917-545-9602
+              </span>
+              <strong><i class="glyphicon glyphicon-envelope"></i></strong>
+              <a href="">hwang.lauren@gmail.com </a><br>
+              <a href="">http://laurenhwangbespoke.com/ </a>
+            </address>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <address>
+              <h2 class="address__city">Los Angeles  &amp; San Francisco</h2>
+              <h3 class="address__company-name">Vince Jelineo </h3>
+              <span class="address__details">
+                <strong><i class="glyphicon glyphicon-map-marker"></i></strong>
+                8811 Alden Drive Suite 6
+              </span>
+              <span class="address__details">Los Angeles, CA 90048</span>
+              <span class="address__details">USA</span>
+              <span class="address__details">
+                <strong><i class="glyphicon glyphicon-earphone"></i></strong>
+                310-435-7464
+              </span>
+              <strong><i class="glyphicon glyphicon-envelope"></i></strong>
+              <a href="">vince@vincejelineo.com </a> <br>
+              <a href="">www.vincejelineo.com</a>
+            </address>
+          </div> -->
+        </div> 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="share-widget">
+              <ul class="share-widget__icons">
+                <li><a class="share-widget__links" href="<perch:content id="fb-url" type="text" label="Facebook Link" />"><i class="fa fa-lg fa-facebook"></i></a></li>
+                <li><a class="share-widget__links" href="<perch:content id="fl-url" type="text" label="Flickr Link" />"><i class="fa fa-lg fa-flickr"></i></a></li>
+                <li><a class="share-widget__links" href="<perch:content id="in-url" type="text" label="Instagram Link" />"><i class="fa fa-lg fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
