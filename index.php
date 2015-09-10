@@ -17,5 +17,3 @@
 	perch_content('Footer');
 
 	perch_layout('global.bottom'); ?>
-​
-

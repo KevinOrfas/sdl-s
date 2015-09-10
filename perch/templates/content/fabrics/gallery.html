@@ -2,15 +2,15 @@
   <div class="container-boot">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="section__heading">Hand woven bespoke</h1>
+        <h1 class="section__heading"><perch:content id="gallery-name" type="text" label="Gallery heading" order="1"/></h1>
       </div>
     </div>
     <div class="row">
       <div class="popup-gallery">
         <perch:repeater id="gallery-images" label="Gallery Images">
         <div class="img-fabric col-md-4">
-          <a href="<perch:content id="fabric-image" type="image" label="Image"  width="1000" height="667" crop="true" order="1"/>" title="<perch:content id="fabric-image-description" type="text" label="Image description" help="Add a description of the image (Will appear under image in popup)" order="2"/>">
-           <img src="<perch:content id="fabric-image" type="image" label="Image"  width="1000" height="667" crop="true" order="1"/>"/>
+          <a href="<perch:content id="fabric-image" type="image" label="Image"  width="1000" height="667" crop="true" order="2"/>" title="<perch:content id="fabric-image-description" type="text" label="Image description" help="Add a description of the image (Will appear under image in popup)" order="3"/>">
+           <img src="<perch:content id="fabric-image" type="image" label="Image"  width="1000" height="667" crop="true" order="2"/>"/>
           </a>
         </div>
         </perch:repeater>
