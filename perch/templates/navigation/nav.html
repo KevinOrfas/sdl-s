@@ -1,13 +1,14 @@
 <perch:before>
     <ul class="nav navbar-nav navbar-right">
-</perch:before>
+
     
     <li class="dropdown">
      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fabrics<span class="caret"></span></a>
     	<!-- <perch:pages id="subitems" encode="true" /> -->
 			<ul class="dropdown-menu">
+      </perch:before>
 				<li><a href="<perch:pages id="pagePath" />"><perch:pages id="pageNavText" /></a></li>
-
+<perch:after>
 			</ul>
     </li>
 
@@ -26,6 +27,6 @@
     <li><a href="https://www.facebook.com/pages/Soie-de-Lune-Ltd/126402010757891"><i class="fa fa-facebook"></i></a></li>
     <li><a href="<perch:content id="fl-url" type="text" label="Flickr Link"  />"><i class="fa fa-flickr"></i></a></li>
     <li><a href="<perch:content id="in-url" type="text" label="Instagram Link"  />"><i class="fa fa-instagram"></i></a></li>
-<perch:after>
+
     </ul>
 </perch:after>

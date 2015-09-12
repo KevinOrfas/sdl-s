@@ -1,1 +1,19 @@
-<?php include(str_replace('/', DIRECTORY_SEPARATOR, '../perch/templates/pages/fabrics.php')); ?>
+<?php include('../perch/runtime.php'); 
+
+    perch_layout('global.top');
+
+    perch_content('Hero');
+    
+    perch_gallery_album_details('hand-woven-bespoke', array(
+            'template' => 'fabrics-album.html'));
+        
+	perch_gallery_album_images('hand-woven-bespoke', array(
+            'template' => 'fabrics-album-image.html'));
+
+    perch_content('Share');
+
+    perch_content('Footer');
+
+    perch_layout('global.bottom');
+
+?>
