@@ -1,10 +1,10 @@
 <?php
     define('PERCH_LICENSE_KEY', 'P21507-FML881-RHY572-FNQ088-ZLD011');
 
-    define("PERCH_DB_USERNAME", 'root');
-    define("PERCH_DB_PASSWORD", 'root');
+    define("PERCH_DB_USERNAME", 'soiedelu_kevin');
+    define("PERCH_DB_PASSWORD", 'fymynu9i');
     define("PERCH_DB_SERVER", "localhost");
-    define("PERCH_DB_DATABASE", "soiedelun_perch");
+    define("PERCH_DB_DATABASE", "soiedelu_perch");
     define("PERCH_DB_PREFIX", "perch2_");
 
     define('PERCH_TZ', 'Europe/London');
