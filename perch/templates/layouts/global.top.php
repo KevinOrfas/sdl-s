@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="/">
             <div class="logo">
               <img src="/perch/resources/s-logo2.png" alt="Soie de lune logo">
             </div>
@@ -33,18 +33,18 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar"> 
           <?php perch_pages_navigation(array(
-          'from-path'            => '*',
-          'levels'               => 0,
+          // 'from-path'            => '/fabrics',
+          'levels'               => 1,
           // 'hide-extensions'      => true,
           // 'hide-default-doc'     => true,
           // 'flat'                 => false,
           'template'             => 'nav.html',
-          'include-parent'       => true,
+          'include-parent'       => false,
           // 'skip-template'        => false,
           // 'siblings'             => false,
-          // 'only-expand-selected' => false,
+          // 'only-expand-selected' => true,
           // 'add-trailing-slash'   => true,
-          // 'navgroup'             => false,
+          'navgroup'             => 'Fabrics',
           // 'include-hidden'       => false,
               ));
           ?>
